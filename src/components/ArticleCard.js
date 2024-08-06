@@ -1,14 +1,14 @@
 import React from 'react';
-import './ArticleCard.css';
+import './ArticleCard.css'; // Assuming you have a CSS file for styling
 
 const ArticleCard = ({ image, heading, body, link }) => {
   return (
     <div className="article-card">
-      <img src={image} alt="Article" className="article-image" />
+      <img src={image} alt={heading} className="article-image" />
       <div className="article-content">
-        <h3 className="article-heading">{heading}</h3>
+        <h2 className="article-heading">{heading}</h2>
         <p className="article-body">{body}</p>
-        <a href={link} className="article-button">Read More..</a>
+        <a href={link} className="article-button">Read More</a>
       </div>
     </div>
   );

@@ -1,8 +1,7 @@
 .bg{
-    background-image: url('../assets/header_bg.jpg'); /* Add your background image */
     height: 150px;
 }
-
+    
 .bg h2 {
     padding-top: 20px;
     font-size: 2em;

@@ -8,13 +8,13 @@ const Home = () =>{
 
     const articles = [
         {
-          image: '../assets/head_icon.jpg',
+          image: 'path-to-image3.jpg',
           heading: 'Homchang',
           body: 'This is a short description of Article 1.',
           link: '#',
         },
         {
-          image: 'path-to-image2.jpg',
+          image: 'path-to-image3.jpg',
           heading: 'Article 2',
           body: 'This is a short description of Article 2.',
           link: '#',

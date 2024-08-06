@@ -12,11 +12,11 @@ const footer = () => {
         </div>
       </div>
       <div className="footer-legal">
-        <p>© 2024 Homgchang. All Rights Reserved · 
+         <p>© 2024 Homgchang. All Rights Reserved {/*· 
             <a href="#">Legal Disclaimer</a> · 
-            <a href="#">Privacy Policy</a>
+            <a href="#">Privacy Policy</a> */}
         </p>
-        <p>A2 soft solutions ltd.</p>
+        <p>Designed and maintained by A2 soft solutions ltd.</p>
       </div>
     </footer>
   );

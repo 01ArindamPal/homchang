@@ -1,5 +1,5 @@
 .header {
-    background-color: #000;
+    background-color: #fc590b;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -49,18 +49,22 @@
     background-image: url('../assets/ldbg.jpg'); /* Add your background image */
     background-color: #333; /* Fallback background color */
     background-size: cover;
+    height: 300px;
+    text-align: start;
     color: #fff;
     padding: 20px;
   }
   
   .headline h2 {
+    padding-top: 130px;
     font-size: 2em;
     margin: 0;
+    width: 65%;
   }
   
   .headline p {
     font-size: 1em;
-    color: #bbb;
+    color: #ffffff;
   }
   
   .read-report {
@@ -76,3 +80,36 @@
   .read-report:hover {
     background-color: #c00;
   }
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo{
+    padding-bottom: 10px;
+  }
+
+  .headline {
+    height: 300px;
+    padding: 10px;
+    text-align: start;
+  }
+
+  .headline h2 {
+    padding-top: 120px;
+    font-size: 1.5em;
+    width: 80%;
+  }
+
+  .headline p {
+    font-size: 0.9em;
+  }
+
+  .read-report {
+    font-size: 0.9em;
+  }
+}

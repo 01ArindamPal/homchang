@@ -31,11 +31,16 @@ const ContactUs = () => {
 
         <div className="contact-us">
       <div className="contact-details">
-        <h2>Contact Us</h2>
+        <p className='det'> We are always happy to hear from you about new ideas or information that may clarify, expand on, or even contradict our 
+          published work. We ask, however, that you refrain from providing us with non-public information that you are required to keep 
+          confidential. In addition, please refrain from sending us any personal health, financial, and/or other identifying information 
+          concerning any individual.</p>
         <p><strong>Phone:</strong> (123) 456-7890</p>
         <p><strong>Email:</strong> info@yourcompany.com</p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/yourcompany" target="_blank" rel="noopener noreferrer">@yourcompany</a></p>
-        <p><strong>Twitter:</strong> <a href="https://www.twitter.com/yourcompany" target="_blank" rel="noopener noreferrer">@yourcompany</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/homchang_northeast/" target="_blank" rel="noopener noreferrer">homchang_northeast</a></p>
+        <p><strong>Twitter:</strong> <a href="https://x.com/homchangoffl" target="_blank" rel="noopener noreferrer">Homchang enews</a></p>
+        <p><strong>Youtube:</strong> <a href="https://www.youtube.com/@homchang_offl/videos" target="_blank" rel="noopener noreferrer">Homchang NE</a></p>
+
       </div>
       <div className="feedback-form">
         <h2>Feedback Form</h2>

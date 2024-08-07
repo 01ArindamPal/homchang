@@ -4,14 +4,16 @@
     
 .bg h2 {
     padding-top: 20px;
-    font-size: 2em;
+    padding-left: 50px;
+    font-size: 3em;
     margin: 0;
-    width: 65%;
   }
   
 .bg p {
-    font-size: 1em;
+    font-size: 2em;
+    padding-left: 50px;
     color: #ffffff;
+
 }
 
 .contact-us {
@@ -19,6 +21,11 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+  }
+  .contact-details .det{
+    color: #8a8a8a;
+    text-align: justify;
+    padding-bottom: 15px;
   }
   
   .contact-details, .feedback-form {

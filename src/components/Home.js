@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './header';
 import Footer from './footer';
 import ArticleCard from './ArticleCard';
+import './Home.css'
 
 const Home = () =>{
 

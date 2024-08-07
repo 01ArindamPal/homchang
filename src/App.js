@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-do
 import './App.css';
 import Home from './components/Home'
 import ContactUs from './components/contactUs';
+import Aboutus from './components/aboutUs'
 
 
 
@@ -15,9 +16,8 @@ function App() {
   
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<header />} />
+          <Route path="/about" element={<Aboutus />} />
           <Route path="/contactus" element={<ContactUs />} />
-
           <Route path="*" element={<Navigate to="/" />} />
                     
         </Routes>

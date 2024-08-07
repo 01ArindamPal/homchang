@@ -4,12 +4,13 @@ import Header from './header';
 import Footer from './footer';
 import ArticleCard from './ArticleCard';
 import './Home.css'
+import IMG from '../assets/head_icon.jpg'
 
 const Home = () =>{
 
     const articles = [
         {
-          image: 'path-to-image3.jpg',
+          image: IMG,
           heading: 'Homchang',
           body: 'This is a short description of Article 1.',
           link: '#',

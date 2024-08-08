@@ -6,7 +6,8 @@ const admin_login = () =>{
     return(
         <div className="login-container">
             <div className="login-box">
-                <h2>Admin Login</h2>
+
+                <h2>Welcome back Admin</h2>
                 <p>Please enter your Login details !</p>
                 <form>
                     <div className="input-group">

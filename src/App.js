@@ -5,10 +5,10 @@ import Home from './components/Home'
 import ContactUs from './components/contactUs';
 import Aboutus from './components/aboutUs';
 
-//import AdminPel from './adminSide/admin_login';
+import AdminPel from './adminSide/admin_login';
 import AdminDashboard from './adminSide/admin_home';
 import AdminPersonal from './adminSide/admin_PersonalDetails';
-import ManageContent from './adminSide/ManageContent';
+// import ManageContent from './adminSide/ManageContent';
 
 function App() {
 
@@ -22,10 +22,10 @@ function App() {
           <Route path="/about" element={<Aboutus />} />
           <Route path="/contactus" element={<ContactUs />} />
 
-          {/* <Route path='/admin' element={<Admin />} /> */}
+          <Route path='/admin' element={<AdminPel />} />
           <Route path='/adminHome' element={<AdminDashboard />} />
           <Route path='/adminDetails' element={<AdminPersonal />} />
-          <Route path='/manageContent' element={<ManageContent />} /> 
+          {/* <Route path='/manageContent' element={<ManageContent />} />  */}
 
           <Route path="*" element={<Navigate to="/" />} />
 

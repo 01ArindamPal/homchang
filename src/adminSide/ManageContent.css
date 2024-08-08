@@ -1,0 +1,56 @@
+.manage-content {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .manage-content .headline-section,
+  .manage-content .article-card-section {
+    margin-bottom: 30px;
+  }
+  
+  .manage-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .manage-content form label {
+    margin: 10px 0;
+  }
+  
+  .manage-content form input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .manage-content form button {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .article-cards-list {
+    margin-top: 20px;
+  }
+  
+  .article-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .article-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .article-card h4 {
+    margin: 10px 0 5px;
+  }
+  
+  .article-card p {
+    margin: 0 0 10px;
+  }
+  

@@ -12,19 +12,19 @@ const Home = () =>{
         {
           image: IMG,
           heading: 'Homchang',
-          body: 'This is a short description of Article 1.',
+          body: "We are always happy to hear from you about new ideas or information that may clarify, expand on, or even contradict our published work. We ask, however, that you refrain from providing us with non-public information that you are required to keep confidential. In addition, please refrain from sending us any personal health, financial, and/or other identifying information",
           link: '#',
         },
         {
-          image: 'path-to-image3.jpg',
-          heading: 'Article 2',
+          image: IMG,
+          heading: 'Homchang',
           body: 'This is a short description of Article 2.',
           link: '#',
         },
         {
-          image: 'path-to-image3.jpg',
-          heading: 'Article 3',
-          body: 'This is a short description of Article 3.',
+          image: IMG,
+          heading: 'Homchang',
+          body: 'This is a short description of Article .',
           link: '#',
         },
       ];

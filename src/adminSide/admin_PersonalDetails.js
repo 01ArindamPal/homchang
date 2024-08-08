@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import './AdminPersonal.css';
 
 function Admin_PersonalDetails() {
@@ -25,13 +24,21 @@ function Admin_PersonalDetails() {
       <div className="sidebar">
         <h2>Admin Panel</h2>
         <ul>
-        <li><a href="/adminHome">Dashboard</a></li>
+          <li><a href="/adminHome">Dashboard</a></li>
           <li><a href="/adminDetails">Personal Details</a></li>
           <li><a href="/adminHome">Manage Content</a></li>
         </ul>
       </div>
       <div className="personal-details">
-        <h2>Update Personal Details</h2>
+        <h2>Admin Details</h2>
+        <div className="current-details">
+          <h3>Current Details</h3>
+          <p><strong>Username:</strong> {personalDetails.username}</p>
+          <p><strong>Name:</strong> {personalDetails.name}</p>
+          <p><strong>Email:</strong> {personalDetails.email}</p>
+          <p><strong>Password:</strong> {personalDetails.password}</p>
+          <p><strong>Phone Number:</strong> {personalDetails.phoneNumber}</p>
+        </div>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label>Username</label>

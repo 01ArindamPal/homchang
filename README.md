@@ -1,3 +1,6 @@
+# Requirements to run this project
+1. install rect dom `npm i react-router-dom` for routing pages in the root directory.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

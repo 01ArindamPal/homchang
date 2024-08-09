@@ -1,90 +1,90 @@
 .header {
-    background-image: url('../assets/header_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-image {
-    height: 40px; /* Adjust the height as needed */
-    margin-right: 10px; /* Space between logo and company name */
-  }
-  
-  .logo h1 {
-    margin: 0;
-    font-size: 1.5em;
-  }
-  
-  .nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav li {
-    margin-left: 20px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15;
-    font-style: inherit;
-    
-  }
-  
-  .nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1em;
-  }
-  
-  .headline {
-    background-color: none; /* Fallback background color */
-    background-size: cover;
-    height: 300px;
-    text-align: start;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  .headline h2 {
-    padding-top: 130px;
-    font-size: 2em;
-    margin: 0;
-    width: 65%;
-  }
-  
-  .headline p {
-    font-size: 1em;
-    color: #ffffff;
-  }
-  
-  .read-report {
-    background-color: #e00;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 10px;
-  }
-  
-  .read-report:hover {
-    background-color: #c00;
-  }
+  background-image: url('../assets/header_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px;  /* Adjust the height as needed */
+  margin-right: 10px;  /* Space between logo and company name */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-left: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15;
+  font-style: inherit;
+
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.headline {
+  background-color: none;  /* Fallback background color */
+  background-size: cover;
+  height: 300px;
+  text-align: start;
+  color: #fff;
+  padding: 20px;
+}
+
+.headline h2 {
+  padding-top: 130px;
+  font-size: 2em;
+  margin: 0;
+  width: 65%;
+}
+
+.headline p {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.read-report {
+  background-color: #e00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.read-report:hover {
+  background-color: #c00;
+}
 
 
 /* Responsive Styles */
@@ -94,7 +94,7 @@
     text-align: center;
   }
 
-  .logo{
+  .logo {
     padding-bottom: 10px;
   }
 

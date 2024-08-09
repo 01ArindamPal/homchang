@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './AdminPersonal.css';
+import React, { useState } from "react";
+import "./AdminPersonal.css";
 
 function Admin_PersonalDetails() {
   const [personalDetails, setPersonalDetails] = useState({
-    username: '',
-    name: '',
-    email: '',
-    password: '',
-    phoneNumber: ''
+    username: "",
+    name: "",
+    email: "",
+    password: "",
+    phoneNumber: "",
   });
 
   const handleInputChange = (e) => {
@@ -16,7 +16,7 @@ function Admin_PersonalDetails() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Personal details updated!');
+    alert("Personal details updated!");
   };
 
   return (
@@ -24,20 +24,36 @@ function Admin_PersonalDetails() {
       <div className="sidebar">
         <h2>Admin Panel</h2>
         <ul>
-          <li><a href="/adminHome">Dashboard</a></li>
-          <li><a href="/adminDetails">Personal Details</a></li>
-          <li><a href="/adminHome">Manage Content</a></li>
+          <li>
+            <a href="/adminHome">Dashboard</a>
+          </li>
+          <li>
+            <a href="/adminDetails">Personal Details</a>
+          </li>
+          <li>
+            <a href="/adminHome">Manage Content</a>
+          </li>
         </ul>
       </div>
       <div className="personal-details">
         <h2>Admin Details</h2>
         <div className="current-details">
           <h3>Current Details</h3>
-          <p><strong>Username:</strong> {personalDetails.username}</p>
-          <p><strong>Name:</strong> {personalDetails.name}</p>
-          <p><strong>Email:</strong> {personalDetails.email}</p>
-          <p><strong>Password:</strong> {personalDetails.password}</p>
-          <p><strong>Phone Number:</strong> {personalDetails.phoneNumber}</p>
+          <p>
+            <strong>Username:</strong> {personalDetails.username}
+          </p>
+          <p>
+            <strong>Name:</strong> {personalDetails.name}
+          </p>
+          <p>
+            <strong>Email:</strong> {personalDetails.email}
+          </p>
+          <p>
+            <strong>Password:</strong> {personalDetails.password}
+          </p>
+          <p>
+            <strong>Phone Number:</strong> {personalDetails.phoneNumber}
+          </p>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
@@ -85,7 +101,9 @@ function Admin_PersonalDetails() {
               onChange={handleInputChange}
             />
           </div>
-          <button type="submit" className="submit-btn">Update Details</button>
+          <button type="submit" className="submit-btn">
+            Update Details
+          </button>
         </form>
       </div>
     </div>

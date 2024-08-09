@@ -92,9 +92,10 @@
 }
 
 @media (max-width: 480px) {
-  .article-card{
+  .article-card {
     width: 95%;
   }
+
   .article-image {
     height: 270px;
   }

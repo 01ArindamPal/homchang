@@ -1,18 +1,18 @@
 .header {
-    background-color: #333; /* Dark background color */
-    color: white; /* Text color */
-    padding-top: 15px;
-    padding-bottom: 15px;
+  background-color: #333; /* Dark background color */
+  color: white;  /* Text color */
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .content-header {
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .logocompany {
-    height: 50px; /* Adjust the height as needed */
+  height: 50px;  /* Adjust the height as needed */
 }
 
 .admin-panel {

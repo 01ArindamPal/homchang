@@ -1,5 +1,5 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import "./Footer.css";
 
 const footer = () => {
   return (
@@ -12,7 +12,9 @@ const footer = () => {
         </div>
       </div>
       <div className="footer-legal">
-         <p>© 2024 Homgchang. All Rights Reserved {/*· 
+        <p>
+          © 2024 Homgchang. All Rights Reserved{" "}
+          {/*· 
             <a href="#">Legal Disclaimer</a> · 
             <a href="#">Privacy Policy</a> */}
         </p>

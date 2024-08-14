@@ -18,7 +18,7 @@ const footer = () => {
             <a href="#">Legal Disclaimer</a> · 
             <a href="#">Privacy Policy</a> */}
         </p>
-        <p>Designed and maintained by A2 soft solutions ltd.</p>
+        <p>Designed and maintained by A2 soft solutions.</p>
       </div>
     </footer>
   );

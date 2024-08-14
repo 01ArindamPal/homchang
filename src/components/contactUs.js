@@ -55,8 +55,7 @@ const ContactUs = () => {
             <a
               href="https://www.instagram.com/homchang_northeast/"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer" >
               homchang_northeast
             </a>
           </p>

@@ -27,7 +27,7 @@ const header = () => {
         <h2>
           Adani Update – Our Response To India’s Securities Regulator SEBI
         </h2>
-        <p>Published on July 1, 2024</p>
+        <p>Published on August 15, 2024</p>
         <button className="read-report">Read Report</button>
       </div>
     </header>

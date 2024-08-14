@@ -5,15 +5,20 @@
 
 .bg h2 {
   padding-top: 20px;
-  padding-left: 50px;
+  padding-left: 0px;
   font-size: 3em;
   margin: 0;
 }
 
 .bg p {
-  font-size: 2em;
-  padding-left: 50px;
+  font-size: 1.5em;
   color: #ffffff;
+}
+
+/*Main body*/
+
+.Contact{
+  background-color: #000000;
 }
 
 .contact-us {
@@ -21,16 +26,19 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(115, 104, 104, 0.1);
 }
 
 .contact-details .det {
-  color: #8a8a8a;
+  color: #d5d4d4;
   text-align: justify;
   padding-bottom: 15px;
 }
 
 .contact-details, .feedback-form {
   margin-bottom: 40px;
+  color: #ffffff;
+
 }
 
 .contact-details h2, .feedback-form h2 {
@@ -59,11 +67,12 @@
 
 .form-group {
   margin-bottom: 15px;
+  margin-right: 20px;
 }
 
 .form-group label {
   font-size: 1.2em;
-  margin-bottom: 5px;
+  margin: 10px;
 }
 
 .form-group input,

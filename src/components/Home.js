@@ -1,5 +1,6 @@
 import React from "react";
 
+import './Home.css';
 import Header from "./header";
 import Footer from "./footer";
 import ArticleCard from "./ArticleCard";

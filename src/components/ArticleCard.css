@@ -2,12 +2,12 @@
 .article-card {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
   margin: 20px 0;
   width: 80%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 4px 5px rgba(255, 255, 255, 0.225);
+  border: 0.5px solid #fff;
 }
 
 .article-image {
@@ -24,6 +24,7 @@
   height: 100%;
   text-align: justify;
   font: 1.2em sans-serif;
+  color: #fff;
 }
 
 .article-heading {
@@ -33,7 +34,7 @@
 
 .article-body {
   font-size: 1em;
-  color: #555;
+  color: #e6e6e6;
   margin: 10px;
 }
 
@@ -42,7 +43,7 @@
   padding: 10px 0;
   text-decoration: none;
   transition: background-color 0.3s ease;
-  color: black;
+  color: rgb(228, 221, 221);
 }
 
 .article-button:hover {

@@ -9,6 +9,7 @@ import "./App.css";
 import Home from "./components/Home";
 import ContactUs from "./components/contactUs";
 import Aboutus from "./components/aboutUs";
+// import Gallery from './components/Gallery';
 
 import AdminPel from "./adminSide/admin_login";
 import AdminDashboard from "./adminSide/admin_home";
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<Aboutus />} />
+          {/* <Route path="/gallery" element={<Gallery />} /> */}
           <Route path="/contactus" element={<ContactUs />} />
 
           <Route path="/admin" element={<AdminPel />} />

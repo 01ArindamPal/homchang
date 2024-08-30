@@ -1,3 +1,5 @@
+/* src/components/Footer.css */
+
 .footer {
   background-color: #111;
   color: #fff;
@@ -17,9 +19,10 @@
 }
 
 .subscribe-form {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap; /* Make form elements wrap on smaller screens */
 }
 
 .subscribe-form input {
@@ -29,6 +32,8 @@
   border-radius: 4px;
   margin-right: 10px;
   width: 300px;
+  max-width: 100%; /* Ensure input is responsive */
+  margin-bottom: 10px; /* Add space between input and button on small screens */
 }
 
 .subscribe-form button {
@@ -39,6 +44,7 @@
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  max-width: 100%; /* Ensure button is responsive */
 }
 
 .subscribe-form button:hover {
@@ -49,6 +55,20 @@
   background-color: #111;
   color: #bbb;
   padding: 10px 0;
+}
+
+.footer .social-media {
+  margin-top: 1rem;
+}
+
+.footer .social-media a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer .social-media a:hover {
+  color: #ffa500;
 }
 
 .footer-legal p {
@@ -62,4 +82,43 @@
 
 .footer-legal a:hover {
   text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-subscribe h3{
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .subscribe-form {
+    flex-direction: column; /* Stack input and button vertically on smaller screens */
+  }
+
+  .subscribe-form input {
+    margin-right: 0;
+    margin-bottom: 10px; /* Ensure proper spacing on smaller screens */
+    width: 90%; /* Full width on small screens */
+  }
+
+  .subscribe-form button {
+    width: 90%; /* Full width on small screens */
+  }
+
+  .footer-legal p {
+    font-size: 0.9em; /* Slightly reduce font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-subscribe h3 {
+    font-size: 1.2em; /* Reduce font size for smaller screens */
+  }
+
+  .footer-legal p {
+    font-size: 0.8em; /* Further reduce font size */
+  }
+
+  .footer-legal a {
+    font-size: 0.8em; /* Adjust link font size */
+  }
 }

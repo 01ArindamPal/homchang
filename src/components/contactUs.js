@@ -22,6 +22,9 @@ const ContactUs = () => {
                 <a href="/about">ABOUT US</a>
               </li>
               <li>
+              <a href="/gallery">GALLERY</a>
+            </li>
+              <li>
                 <a href="/contactus">CONTACT US</a>
               </li>
             </ul>
@@ -33,77 +36,43 @@ const ContactUs = () => {
         </div>
       </header>
 
-      <div className="contact-us">
-        <div className="contact-details">
-          <p className="det">
-            {" "}
-            We are always happy to hear from you about new ideas or information
+      <div className="contact-form-container">
+      <div className="form-section">
+        <h1>Contact our team</h1>
+        <p className='det'>
+        We are always happy to hear from you about new ideas or information
             that may clarify, expand on, or even contradict our published work.
             We ask, however, that you refrain from providing us with non-public
             information that you are required to keep confidential. In addition,
             please refrain from sending us any personal health, financial,
             and/or other identifying information concerning any individual.
-          </p>
-          <p>
-            <strong>Phone:</strong> (123) 456-7890
-          </p>
-          <p>
-            <strong>Email:</strong> info@yourcompany.com
-          </p>
-          <p>
-            <strong>Instagram:</strong>{" "}
-            <a
-              href="https://www.instagram.com/homchang_northeast/"
-              target="_blank"
-              rel="noopener noreferrer" >
-              homchang_northeast
-            </a>
-          </p>
-          <p>
-            <strong>Twitter:</strong>{" "}
-            <a
-              href="https://x.com/homchangoffl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Homchang enews
-            </a>
-          </p>
-          <p>
-            <strong>Youtube:</strong>{" "}
-            <a
-              href="https://www.youtube.com/@homchang_offl/videos"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Homchang NE
-            </a>
-          </p>
-        </div>
-        <div className="feedback-form">
-          <h2>Feedback Form</h2>
-          <form>
-            <div className="form-group">
-              <label htmlFor="name">Name:</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
+        </p>
+        <form className="contact-form">
+          <div className="form-row">
+            <input type="text" placeholder="Full Name" name="Name" required />
+                      </div>
+          <div className="form-row">
+            <input type="email" placeholder="Email" name="email" required />
+          </div>
+          <div className="form-row">
+            <input type="tel" placeholder="Phone number" name="phoneNumber" required />
+          </div>
+          <div className="form-row">
+            <textarea placeholder="Leave us a message..." name="message" required></textarea>
+          </div>
+          <button type="submit">Send message</button>
+        </form>
       </div>
+      <div className="info-section">
+        <h2>Chat with us</h2>
+        <p><a href="mailto:you@company.com">Shoot us an email</a></p>
+        <p><a href="#">Message us on X</a></p>
+
+        <h2>Call us</h2>
+        <p>Call our team Mon-Fri from 8am to 5pm.</p>
+        <p><a href="tel:+15550000000">+1(555) 000-0000</a></p>
+      </div>
+    </div>
 
       <Footer />
     </div>

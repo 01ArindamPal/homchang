@@ -18,6 +18,9 @@ const header = () => {
               <a href="/about">ABOUT US</a>
             </li>
             <li>
+              <a href="/gallery">GALLERY</a>
+            </li>
+            <li>
               <a href="/contactus">CONTACT US</a>
             </li>
           </ul>

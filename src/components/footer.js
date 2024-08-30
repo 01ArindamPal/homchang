@@ -27,8 +27,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-subscribe">
         <h3>GET OUR LATEST REPORTS DELIVERED TO YOUR INBOX</h3>
-        <div className="subscribe-form">
-          <input type="email" placeholder="email address" />
+        <form className="subscribe-form">
+          <input type="email" placeholder="email address" required/>
 
           <React.Fragment>
           <button type="submit" onClick={handleClickOpen}>SUBSCRIBE</button>
@@ -54,7 +54,7 @@ const Footer = () => {
       </Dialog>
     </React.Fragment>
           
-        </div>
+        </form>
       </div>
 
       {/* Social media Handles */}

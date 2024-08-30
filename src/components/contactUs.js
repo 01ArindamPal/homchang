@@ -66,7 +66,11 @@ const ContactUs = () => {
       <div className="info-section">
         <h2>Chat with us</h2>
         <p><a href="mailto:you@company.com">Shoot us an email</a></p>
-        <p><a href="#">Message us on X</a></p>
+        <p><a href="https://x.com/homchangoffl">Message us on X</a></p>
+        <p><a href="https://www.instagram.com/homchang_northeast/">Message us on Instagram</a></p>
+        <p><a href="https://www.facebook.com/homchangnewspaper">Message us on Facebook</a></p>
+
+
 
         <h2>Call us</h2>
         <p>Call our team Mon-Fri from 8am to 5pm.</p>

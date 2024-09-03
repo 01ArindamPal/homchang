@@ -1,0 +1,38 @@
+.report-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .report-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .date-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .report-content {
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  

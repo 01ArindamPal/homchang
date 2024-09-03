@@ -28,10 +28,10 @@ const header = () => {
       </div>
       <div className="headline">
         <h2>
-          Adani Update – Our Response To India’s Securities Regulator SEBI
+        NEUFC sails into its maiden Durand Cup Final beating Shillong Lajong
         </h2>
-        <p>Published on August 15, 2024</p>
-        <button className="read-report">Read Report</button>
+        <p>Published on September 03, 2024</p>
+        <button className="read-report" onClick={() => window.location.href = '/report'}>Read Report</button>
       </div>
     </header>
   );

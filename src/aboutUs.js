@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../assets/HG_logo.png";
+import logo from "../src/assets/HG_logo.png";
 
-import Footer from "./footer";
-import "./ContactUs.css";
-import './aboutUs.css'
+import Footer from "./components/footer";
+import "./components/ContactUs.css";
+import './components/aboutUs.css'
 
 const aboutUs = () => {
   return (

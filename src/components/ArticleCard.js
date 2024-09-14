@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+  import React, {useState} from 'react';
 import "./ArticleCard.css"; // Assuming you have a CSS file for styling
 
 import icon1 from '../assets/YOG.png';

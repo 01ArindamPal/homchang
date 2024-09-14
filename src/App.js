@@ -6,10 +6,10 @@ import {
 } from "react-router-dom";
 
 import "./App.css";
-import Home from "./components/Home";
-import ContactUs from "./components/contactUs";
-import Aboutus from "./components/aboutUs";
-// import Gallery from './components/Gallery';
+import Home from "./Home";
+import ContactUs from "./contactUs";
+import AboutUs from "./aboutUs"; // Renamed to match common camelCase conventions
+import Gallery from './Gallery';
 
 import ReportPage from "./components/ReportPage";
 
@@ -23,18 +23,22 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          {/* Home Route */}
           <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<Aboutus />} />
-          {/* <Route path="/gallery" element={<Gallery />} /> */}
-          <Route path="/contactus" element={<ContactUs />} />
 
+          {/* Other Defined Routes */}
+          <Route path="/about" element={<AboutUs />} /> {/* Adjusted the URL structure */}
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="/report" element={<ReportPage />} />
 
-          {/* <Route path="/admin" element={<AdminPel />} />
-          <Route path="/adminHome" element={<AdminDashboard />} />
-          <Route path="/adminDetails" element={<AdminPersonal />} />
-          <Route path='/manageContent' element={<ManageContent />} />  */}
+          {/* Admin Routes (commented out for now) */}
+          {/* <Route path="/admin" element={<AdminPel />} /> */}
+          {/* <Route path="/adminHome" element={<AdminDashboard />} /> */}
+          {/* <Route path="/adminDetails" element={<AdminPersonal />} /> */}
+          {/* <Route path='/manageContent' element={<ManageContent />} /> */}
 
+          {/* Catch-all Route for Undefined Paths */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

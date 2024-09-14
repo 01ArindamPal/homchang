@@ -9,7 +9,7 @@ const ReportPage = () => {
     <div>
       <div className="report-container">
         <div className="image-container">
-          <img src={reportImage} alt="Report" className="report-image" />
+          <img src={reportImage} alt="Report" className="report-image"/>
           <div className="date-overlay">Published on September 03, 2024</div>
         </div>
         <div className="report-content">

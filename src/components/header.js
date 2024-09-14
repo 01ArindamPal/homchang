@@ -1,30 +1,43 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Header.css";
 import logo from "../assets/HG_logo.png";
 
-const header = () => {
+const Header = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle the mobile drawer
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Close the drawer explicitly
+  const closeDrawer = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="header-content">
         <div className="logo">
           <img src={logo} alt="Company Logo" className="logo-image" />
         </div>
-        <nav className="nav">
-          <ul>
-            <li>
-              <a href="/">HOME</a>
-            </li>
-            <li>
-              <a href="/about">ABOUT US</a>
-            </li>
-            <li>
-              <a href="/gallery">GALLERY</a>
-            </li>
-            <li>
-              <a href="/contactus">CONTACT US</a>
-            </li>
-          </ul>
-        </nav>
+        <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        {isOpen && (
+          <button className="close-drawer-btn" onClick={closeDrawer}>
+            ✕
+          </button>
+        )}
+        <a href="#home" onClick={closeDrawer}>Home</a>
+        <a href="#services" onClick={closeDrawer}>Services</a>
+        <a href="#about" onClick={closeDrawer}>About</a>
+        <a href="#contact" onClick={closeDrawer}>Contact</a>
+      </div>
+      <div className="navbar-toggle" onClick={toggleDrawer}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
       </div>
       <div className="headline">
         <h2>
@@ -37,4 +50,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

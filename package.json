@@ -2,6 +2,7 @@
   "name": "homchang",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://homchang.in/",
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "react-router-dom": "^6.26.0"
   }
 }

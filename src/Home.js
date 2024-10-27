@@ -5,7 +5,6 @@ import Header from "./components/header";
 import ArticleCard from "./components/ArticleCard";
 import Footer from "./components/footer";
 
-import Scroll from './components/scroll_button';
 
 const Home = () => {
   
@@ -13,8 +12,16 @@ const Home = () => {
   return (
     <div className="Main_div">
       <Header />
-      <Scroll />
-      <ArticleCard />
+
+      <div className="main-body">
+      <div className="larger-section">
+        <ArticleCard />
+      </div>
+      <div className="smaller-section"></div>
+
+      {/* Empty section */}
+
+    </div>
 
       <Footer />
     </div>

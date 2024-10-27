@@ -1,21 +1,71 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Footer from "./footer";
 import "./ReportPage.css"; // Create this CSS file for styling
-import reportImage from "../assets/NEFC.png"; // Add your image here
+import logo from "../assets/HG_logo.png";
+import imggg from "../assets/fd.jpg";
+
+
+import "./../components/Home.css";
 
 const ReportPage = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle the mobile drawer
+  const toggleDrawer = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Close the drawer explicitly
+  const closeDrawer = () => {
+    setIsOpen(false);
+
+  };
   return (
     <div>
+      
+      <header className="header">
+      <div className="header-content">
+        <div className="logo">
+        <a href="/">
+            <img src={logo} alt="Company Logo" className="logo-image" />
+            </a>
+        </div>
+        <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
+        {isOpen && (
+          <button className="close-drawer-btn" onClick={closeDrawer}>
+            ✕
+          </button>
+        )}
+        <a href="/" onClick={closeDrawer}>HOME</a>
+        <a href="/about" onClick={closeDrawer}>ABOUT US</a>
+        <a href="/gallery" onClick={closeDrawer}>GALLERY</a>
+        <a href="/contactus" onClick={closeDrawer}>CONTACT US</a>
+      </div>
+      <div className="navbar-toggle" onClick={toggleDrawer}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+      </div>
+    </header>
+
+    <div className="main-body">
+      <div className="larger-section">
+
       <div className="report-container">
+
+      <h1>
+            NEUFC sails into its maiden Durand Cup Final beating Shillong Lajong
+          </h1>
+          
         <div className="image-container">
-          <img src={reportImage} alt="Report" className="report-image"/>
+          <img src={imggg} alt="Report" className="report-image"/>
           <div className="date-overlay">Published on September 03, 2024</div>
         </div>
         <div className="report-content">
-          <h1>
-            NEUFC sails into its maiden Durand Cup Final beating Shillong Lajong
-          </h1>
+          
           <p>
             In the most anticipated Northeast Derby Northeast United FC beats
             the home crowd favourites Shillong Lajong FC in the first semifinals
@@ -37,7 +87,17 @@ const ReportPage = () => {
           {/* Add more paragraphs or content as needed */}
         </div>
       </div>
+        
+      </div>
+      <div className="smaller-section"></div>
+
+      {/* Empty section */}
+
+    </div>
       <Footer />
+      <div class="sticky-button">
+  <button>Click Me</button>
+</div>
     </div>
   );
 };

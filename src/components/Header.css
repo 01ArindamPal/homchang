@@ -1,3 +1,4 @@
+/* Header Styles */
 .header {
   background-image: url('../assets/header_bg.jpg');
   background-repeat: no-repeat;
@@ -11,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 20px;
 }
 
 .logo {
@@ -20,27 +20,28 @@
 }
 
 .logo-image {
-  height: 40px;  /* Adjust the height as needed */
-  margin-right: 10px;  /* Space between logo and company name */
+  height: 40px;
+  margin-right: 10px; /* Space between logo and company name */
 }
 
-/* Links container */
+/* Navbar links */
 .navbar-links {
   list-style: none;
-    display: flex;
-    text-decoration: none;
+  display: flex;
+  text-decoration: none;
+  font-size: 1em;
 }
 
 .navbar-links a {
   color: #fff;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 0.7em;
+  padding: 8px 12px;
+  font-weight: bold;
 }
 
 .navbar-links a:hover {
-  color: #555;
-  background-color: none;
+  color: #a5a5a5;
 }
 
 /* Toggle button for mobile */
@@ -62,9 +63,8 @@
   display: none;
 }
 
-
+/* Headline Section */
 .headline {
-  background-color: none;  /* Fallback background color */
   background-size: cover;
   height: 300px;
   text-align: start;
@@ -85,7 +85,7 @@
 }
 
 .read-report {
-  background-color: #e00;
+  background-color:#ff693b;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -99,47 +99,84 @@
   cursor: pointer;
 }
 
-
 /* Responsive Styles */
-@media (max-width: 780px) {
-  /* .header-content {
-    flex-direction: column;
+@media(max-width: 1024px){
+  .header-content {
+    flex-direction: row;
     text-align: center;
-  } */
-
-  .logo {
-    padding-bottom: 10px;
   }
 
-    /* Hide links and show toggle button */
-    .navbar-links {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100%;
-      width: 55%;
-      background-color: #ed8d17f3;
-      flex-direction: column;
-      /* justify-content: center; */
-      align-items: center;
-      gap: 30px;
-      transform: translateX(120%);
-      transition: transform 0.3s ease-in-out;
-      padding-top: 50px;      /* Add space for the close button */
-    }
-  
-    /* Show links when the drawer is open */
-    .navbar-links.open {
-      transform: translateX(0);
-    }
-  
-    /* Show the toggle button */
-    .navbar-toggle {
-      display: flex;
-    }
+  .navbar-links {
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.9em;
   }
-  
-  /* Close button styles */
+
+  .headline h2 {
+    font-size: 1.8em;
+    padding-top: 100px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: row;
+  }
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .headline {
+    height: 250px;
+    padding: 15px;
+  }
+
+  .headline h2 {
+    font-size: 1.5em;
+    padding-top: 80px;
+    width: 80%;
+  }
+
+  .headline p {
+    font-size: 0.9em;
+  }
+
+  .read-report {
+    padding: 8px 18px;
+    font-size: 0.9em;
+  }
+
+  /* Show links in drawer for mobile */
+  .navbar-links {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 55%;
+    background-color: #ff693b;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    /* gap: 30px; */
+    transform: translateX(120%);
+    transition: transform 0.3s ease-in-out;
+    padding-top: 50px;
+  }
+
+  .navbar-links.open {
+    transform: translateX(0);
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
   .close-drawer-btn {
     display: flex;
     position: absolute;
@@ -151,20 +188,20 @@
     color: white;
     cursor: pointer;
   }
-  
+
   .close-drawer-btn:hover {
     color: #ff4c4c;
   }
-  
-  
-  /* Additional styles for mobile drawer */
+
+  /* Style mobile drawer links */
   .navbar-links a {
-    padding: 0 30px;
+    padding: 30px 0;
     width: 100%;
     text-align: center;
     font-size: 1.5em;
   }
 
+  /* Responsive headline styles */
   .headline {
     height: 300px;
     padding: 10px;
@@ -184,3 +221,29 @@
   .read-report {
     font-size: 0.9em;
   }
+}
+
+/* For very small devices or portrait mode */
+@media (max-width: 480px) {
+  .logo-image {
+    height: 30px;
+  }
+
+  .headline {
+    height: 200px;
+  }
+
+  .headline h2 {
+    font-size: 1.2em;
+    padding-top: 60px;
+  }
+
+  .headline p {
+    font-size: 0.8em;
+  }
+
+  .read-report {
+    padding: 6px 16px;
+    font-size: 1em;
+  }
+}

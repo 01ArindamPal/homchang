@@ -23,7 +23,8 @@
   flex-direction: row;
   justify-content:space-evenly;
   padding: 20px;
-  background-color: #f4efef;
+  background-color: #060606f7;
+  color: #fff;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -77,7 +78,7 @@
 }
 
 .contact-form button {
-  background-color: #000;
+  background-color: #c50909;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -88,7 +89,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #333;
+  background-color: #c50909dc;
 }
 
 .info-section h2 {
@@ -104,6 +105,7 @@
 .info-section a {
   color: #000;
   text-decoration: none;
+  color: #fff;
 }
 
 .info-section a:hover {

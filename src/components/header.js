@@ -20,7 +20,9 @@ const Header = () => {
     <header className="header">
       <div className="header-content">
         <div className="logo">
-          <img src={logo} alt="Company Logo" className="logo-image" />
+        <a href="/">
+            <img src={logo} alt="Company Logo" className="logo-image" />
+            </a>
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
         {isOpen && (
@@ -28,10 +30,10 @@ const Header = () => {
             ✕
           </button>
         )}
-        <a href="#home" onClick={closeDrawer}>Home</a>
-        <a href="#services" onClick={closeDrawer}>Services</a>
-        <a href="#about" onClick={closeDrawer}>About</a>
-        <a href="#contact" onClick={closeDrawer}>Contact</a>
+        <a href="/" onClick={closeDrawer}>HOME</a>
+        <a href="/about" onClick={closeDrawer}>ABOUT US</a>
+        <a href="/gallery" onClick={closeDrawer}>GALLERY</a>
+        <a href="/contactus" onClick={closeDrawer}>CONTACT US</a>
       </div>
       <div className="navbar-toggle" onClick={toggleDrawer}>
         <span className="bar"></span>
@@ -41,7 +43,7 @@ const Header = () => {
       </div>
       <div className="headline">
         <h2>
-        NEUFC sails into its maiden Durand Cup Final beating Shillong Lajong
+        NEUFC sails into its maiden Durand Cup Final beating Shillong Lajong 
         </h2>
         <p>Published on September 03, 2024</p>
         <button className="read-report" onClick={() => window.location.href = '/report'}>Read Report</button>

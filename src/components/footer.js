@@ -71,12 +71,12 @@ const Footer = () => {
               rel="noopener noreferrer">Instagram</a>
         </div>
         <p>
-          © 2024 Homgchang. All Rights Reserved{" "}
+          © 2024 Homchang. All Rights Reserved{" "}
           {/*· 
             <a href="#">Legal Disclaimer</a> · 
             <a href="#">Privacy Policy</a> */}
         </p>
-        <p>Designed and maintained by A2 soft solutions.</p>
+        {/* <p>Designed and maintained by A2 soft solutions.</p> */}
       </div>
     </footer>
   );

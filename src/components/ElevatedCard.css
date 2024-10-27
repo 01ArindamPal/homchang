@@ -1,0 +1,108 @@
+.elevated-card {
+  background-color: #eee5e5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Responsive font sizes for the card-heading */
+.card-heading {
+  font-size: 1.25em;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Responsive font sizes for the card details */
+.card-details {
+  font-size: 0.95em;
+  margin-bottom: 10px;
+  color: #444444;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Article link style */
+.article-details a {
+  font-size: 1em;
+  color: rgb(5, 2, 26);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.article-details a:hover {
+  color: #0056b3;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+  background-color: #ff0000;
+  color: white;
+  border-radius: 90px;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 1024px) {
+  .card-heading {
+    font-size: 1.2em;
+  }
+
+  .card-details {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-heading {
+    font-size: 1.1em;
+  }
+
+  .card-details {
+    font-size: 0.85em;
+  }
+
+  .pagination button {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-heading {
+    font-size: 1em;
+  }
+
+  .card-details {
+    font-size: 0.8em;
+  }
+
+  .pagination button {
+    padding: 0.3rem 0.6rem;
+  }
+}

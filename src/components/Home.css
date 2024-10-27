@@ -1,0 +1,36 @@
+.main-body {
+    display: flex;
+    height: 100%;
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  /* The 2:1 ratio layout for larger screens */
+  .larger-section {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px 0 0;
+  }
+  
+  .smaller-section {
+    flex: 1;
+    background-color: #e0e0e0; /* Optional */
+  }
+  
+  /* Responsive design: Stack sections vertically on smaller screens */
+  @media (max-width: 768px) {
+    .main-body {
+      flex-direction: column;
+    }
+  
+    .larger-section,
+    .smaller-section {
+      flex: none; /* Reset flex behavior */
+      width: 100%; /* Full width for each section */
+      height: auto; /* Adjust height for stacking */
+      margin: 0;
+    }
+  }
+  

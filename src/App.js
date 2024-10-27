@@ -13,7 +13,7 @@ import Gallery from './Gallery';
 
 import ReportPage from "./components/ReportPage";
 
-// import AdminPel from "./adminSide/admin_login";
+import AdminPel from "./adminSide/admin_login";
 // import AdminDashboard from "./adminSide/admin_home";
 // import AdminPersonal from "./adminSide/admin_PersonalDetails";
 // import ManageContent from './adminSide/ManageContent';
@@ -33,7 +33,7 @@ function App() {
           <Route path="/report" element={<ReportPage />} />
 
           {/* Admin Routes (commented out for now) */}
-          {/* <Route path="/admin" element={<AdminPel />} /> */}
+          <Route path="/admin" element={<AdminPel />} />
           {/* <Route path="/adminHome" element={<AdminDashboard />} /> */}
           {/* <Route path="/adminDetails" element={<AdminPersonal />} /> */}
           {/* <Route path='/manageContent' element={<ManageContent />} /> */}

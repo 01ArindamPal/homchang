@@ -1,7 +1,6 @@
 .admin-panel {
   display: flex;
   height: 100vh;  /* Ensure the container takes the full height of the viewport */
-  font-family: 'Arial', sans-serif;
   color: #333;
 }
 
